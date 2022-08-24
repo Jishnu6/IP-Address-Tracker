@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.App {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+
+.head {
+  background-image: url("../images/pattern-bg.png");
+  background-size: cover;
+  height: 300px;
+}
+
+.title {
+  color: white;
+}
+
+#inputGroup-sizing-lg {
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+  position: absolute;
+}
+
+.parts {
+  padding-right: 25px;
+  padding-left: 15px;
+  border-right: 1px solid grey;
+}
+.parts:nth-child(4) {
+  border-right: none;
+}
+
+.label {
+  color: grey;
+}
+.desc {
+  font-weight: bolder;
+}
+
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .parts {
+    border-bottom: 1px solid grey;
+    border-right: none;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+  .parts:nth-child(4) {
+    border-bottom: none;
+  }
+}
